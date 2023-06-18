@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/da435bb3e7.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:1px;
+            padding:0px;
+        }
+        .grid-box{
+              position:sticky;
+        }
+        #head{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto auto;
+            gap:5px;
+            border: 1px solid black;
+            width:100%;
+            background-color: #060505;
+           
+        }
+        .Amazon{
+            position: absolute;
+            top:15px;
+            left:100px
+        }
+        .loc{
+            position:absolute;
+            top:15px;
+            left:150px;
+            color: aliceblue;
+          }
+        .item{
+            margin-right: 800px;
+        }
+        .navbar{
+            padding:6px 20px 6px 20px;
+            width:500px;
+            margin-left: 150px;
+            position: absolute;
+            top:15px;
+            right:470px;
+        }
+        .nav{
+            position: absolute;
+            left:840px;
+            top:15px;
+            background-color: #f5ce4f;
+            border: 1px solid black;
+            padding:5px;
+           }
+        .select{
+            position: absolute;
+            width:40px;
+            height:30px;
+            left:371px;
+            top:15px;
+          }
+          
+        .lang{
+            position: absolute;
+            width:30px;
+            height:30px;
+            left:927px;
+            top:15px;
+        }
+        .lang2{
+            position: absolute;
+            text-decoration: none;
+            padding:5px;
+            left:970px;
+            top:15px;
+
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        .sign{
+            position:absolute;
+            left:1050px;
+            color: rgb(6, 6, 6);
+            margin-top: -16px;
+        }
+        .signin{
+            position: absolute;
+            top:40px;
+        }
+        .boo{
+            position: absolute;
+            left:1180px;
+            top:10px;
+        }
+        .momo{
+            position:absolute;
+            left:70px;
+            top:15px;
+        }
+        .momo1{
+            position: absolute;
+            top:5px;
+            left:100px;
+            color: #fcfcfa;
+            font-size:20px;
+            margin-top: 5px;
+        }
+        .item2{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto auto auto auto auto auto auto auto auto;
+            gap:5px;
+            width:100%;
+            height:30px;
+            padding-bottom: 45px;
+            position: relative;
+            background-color: #161820;
+            bottom: 2px;
+        }
+        .first{
+            position: absolute;
+            top:18px;
+            left:15px;
+            color: #f8f6f6;
+        }
+
+        .second{
+            position: absolute;
+            top:18px;
+            left:45px;
+            color: #f8f6f6;
+        }
+        .second:hover{
+            border: 1px solid white;
+        }
+        .third{
+            position: absolute;
+            left:80px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .third:hover{
+            border: 1px solid white;
+        }
+        .fourth{
+            position: absolute;
+            left:220px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .fourth:hover{
+            border: 1px solid white;
+        }
+        .fifth{
+            position: absolute;
+            left:260px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .fifth:hover{
+            border: 1px solid white;
+        }
+        .six{
+            position: absolute;
+            left:355px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .six:hover{
+            border: 1px solid white;
+        }
+        .seven{
+            position: absolute;
+            left:430px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .seven:hover{
+            border: 1px solid white;
+        }
+        .eight{
+            position: absolute;
+            left:540px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .eight:hover{
+            border: 1px solid white;
+        }
+        .nine{
+            position: absolute;
+            left:670px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .nine:hover{
+            border: 1px solid white;
+        }
+        .ten{
+            position: absolute;
+            left:775px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .ten:hover{
+            border: 1px solid white;
+        }
+        .eleven{
+            position: absolute;
+            left:860px;
+            top:18px;
+            color: #f6f2f2;
+        }
+        .eleven:hover{
+            border: 1px solid white;
+        }
+         
+        .one{
+            position: absolute;
+            left:942px;
+            top:1px;
+        }
+        .pogo{
+            position: absolute;
+            width:100%;
+            height:600px;
+            left:-1px;
+            top:48px;
+        }
+        .item4{
+            display:grid;
+            grid-template-rows: auto auto auto auto auto;
+            gap:5px;
+            z-index:-1;
+            position: relative;
+        }
+        .pos1{
+          position: absolute;
+          top:500px;
+        }
+        .loss{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            position: relative;
+            right:80px;
+            top:641px;
+            padding-right:1350px;
+            padding-bottom:1200px;
+            background-image: linear-gradient(rgb(63, 220, 241),rgb(128, 227, 245),rgb(186, 233, 235),white);
+
+        }
+        .dol{
+            position: absolute;
+            padding-right:400px;
+            padding-bottom:400px;
+            background-color:rgb(186, 233, 243);
+            top:-170px;
+            right:930px;
+        }
+        .dol>h2{
+            position: absolute;
+            bottom:80%;
+            left:10%;
+           
+        }
+        .moj1{
+            position: absolute;
+            top:100px;
+            
+           
+        }
+        .moj2{
+            position: absolute;
+            top:100px;
+            left:160px;
+        }
+        .moj3{
+            position: absolute;
+            top:260px;
+        }
+        .moj4{
+            position: absolute;
+            top:260px;
+            left:160px;
+        }
+        .mol1{
+           position:absolute;
+           top:130px;
+           left:50px;
+           color:black;
+        }
+        .mol2{
+            position: absolute;
+            top:130px;
+            left:70px;
+            color:black;
+        }
+        .mol3{
+           position:absolute;
+           top:110px;
+           left:40px;
+           color:black;
+        }
+        .mol4{
+            position: absolute;
+            top:110px;
+            left:70px;
+            color:black;
+        }
+        .sol{
+            position: absolute;
+            padding-right:450px;
+            padding-bottom:400px;
+            background-color:rgb(186, 233, 243);
+            top:-170px;
+            left:440px;
+           
+        }
+        .sol>h2{
+            position: absolute;
+            bottom:80%;
+            left:10%;
+
+        }
+        .mot1{
+            position: absolute;
+            top:100px;
+            left:20px;
+            
+        }
+        .mot2{
+            position: absolute;
+            top:100px;
+            left:230px;
+        }
+        
+        .mot3{
+            position: absolute;
+            top:250px;
+            left:20px;
+        }
+        .mot4{
+            position: absolute;
+            top:250px;
+            left:230px;
+        }
+        .mop1{
+           position:absolute;
+           top:130px;
+           left:50px;
+           color:black;
+        }
+        .mop2{
+            position: absolute;
+            top:130px;
+            left:70px;
+            color:black;
+        }
+        .mop3{
+           position:absolute;
+           top:120px;
+           left:40px;
+           color:black;
+        }
+        .mop4{
+            position: absolute;
+            top:120px;
+            left:50px;
+            color:black;
+        }
+        .dog{
+            position: absolute;
+            background-color: #c8fafa;
+            top:475px;
+            left:900px;
+            padding-right:400px ;
+            padding-bottom:120px;
+        }
+        .dog>h2{
+            position: absolute;
+            bottom:50%;
+            left:10%; 
+        }
+        .dog>a{
+            position: absolute;
+            text-decoration: none;
+            color:black;
+            background: #f5ce4f;
+            border-radius:4px;
+            margin-left:100px ;
+            top:70px;
+            padding:8px 30px 8px 30px;
+            
+        }
+        .pos1{
+            position: absolute;
+            left:950px;
+            top:600px;
+        }
+        .polo{
+            position: absolute;
+            background-color:rgb(186, 233, 243);
+            padding-right:400px;
+            padding-bottom:400px;
+            top:900px;
+            left:15px;
+            
+        }
+        .polo>h2{
+            position: absolute;
+            bottom:80%;
+            left:10%;
+        }
+        .logo1{
+            position: absolute;
+            top: 90px;
+
+        }
+        .logo2{
+            position: absolute;
+            left:200px;
+            top:90px;
+        }
+        .logo3{
+            position: absolute;
+            top:250px;
+        }
+        .logo4{
+            position: absolute;
+            top:250px;
+            left:200px;
+        }
+        .lag1{
+          position: absolute;
+          color:#060505;
+          left:60px;
+
+        }
+        .lag2{
+          position: absolute;
+          color:#060505;
+          left:60px;
+        }
+        .lag3{
+          position: absolute;
+          color:#060505;
+          left:60px;
+        }
+        .lag4{
+          position: absolute;
+          color:#060505;
+          left:60px;
+        }
+        .tone{
+            position: absolute;
+            background-color:rgb(186, 233, 243);
+            top:900px;
+            left:450px;
+            padding-top: 90px;
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+        .tone>h2{
+            position: absolute;
+            bottom:85%;
+            left:10%;
+        }
+        .don{
+            position: absolute;
+            top:900px;
+            left:900px;
+            padding-right:440px;
+            padding-bottom:400px;
+            background-color: #cff7f7;
+        }
+        .don>h2{
+            position: absolute;
+            left:07%;
+            bottom:85%;
+        }
+        .cap1{
+            position: absolute;
+            top:75px;
+            left:25px;
+
+        }
+        .cap2{
+            position: absolute;
+            left:240px;
+            top:70px;
+        }
+        .cap3{
+            position: absolute;
+            top:250px;
+            left:15px;
+
+        }
+        .cap4{
+            position: absolute;
+            left:240px;
+            top:250px;
+
+        }
+        .kal1{
+          position: absolute;
+          color:#060505;
+          margin-left: 50px;
+
+        }
+        .kal2{
+          position: absolute;
+          color:#060505;
+          margin-left: 50px;
+        }
+        .kal3{
+          position: absolute;
+          color:#060505;
+          margin-left: 50px;
+        }
+        .kal4{
+          position: absolute;
+          color:#060505;
+          margin-left: 50px;
+        }
+        .yar{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            gap: 10px;
+            position: relative;
+            overflow:auto;
+            padding-top:50px;
+            background: #d9f4f6;
+            margin-top: 1300px;
+        }
+        .yar>h2{
+            position: absolute;
+            top:15px;
+        }
+        .kar{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto ;
+            gap: 10px;
+            position: relative;
+            overflow:auto;
+            padding-top:50px;
+            background: #d9f4f6;
+            margin-top: 30px;
+            padding-bottom: 50px;
+        }
+        .kar>h2{
+            position: absolute;
+            top:15px;
+        }
+        .tal1>a{
+           color:white;
+           background-color: #970e0e;
+        }
+        .tal2>a{
+           color:white;
+           background-color: #970e0e;
+           padding: 3px;
+        }
+        .tal3>a{
+           color:white;
+           background-color: #970e0e;
+           padding: 3px;
+        }
+        .tal4>a{
+           color:white;
+           background-color: #970e0e;
+           padding: 3px;
+        }
+        .tal5>a{
+           color:white;
+           background-color: #970e0e;
+           padding: 3px;
+        }
+        .tal6>a{
+           color:white;
+           background-color: #970e0e;
+           padding: 3px;
+        }
+        .tal7>a{
+           color:white;
+           background-color: #970e0e;
+           padding: 3px;
+        }
+        .po1{
+            margin-top: 20px;
+            margin-left: 140px;
+            margin-bottom: 20px;
+        }
+        .pig{
+            position: absolute;
+            padding-right:400px;
+            padding-bottom:450px;
+            padding-left: 10px;
+            background-color:rgb(220, 242, 247);
+            top:2400px;
+            left:470px;
+        }
+        .pig>h2{
+           position: absolute;
+            bottom:85%;
+            left:10%;
+        }
+        .pig1{
+            position: absolute;
+            top: 90px;
+        }
+        .pig2{
+            position: absolute;
+            left:200px;
+            top:90px;
+        }
+        .pig3{
+            position: absolute;
+            top:250px;
+        }
+        .pig4{
+            position: absolute;
+            top:250px;
+            left:200px;
+        }
+        .uff1{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+
+        }
+        .uff2{
+            position: absolute;
+            color:#060505;
+            margin-left: 30px;
+        }
+        .uff3{
+            position: absolute;
+            color:#060505;
+            margin-left: 30px;
+        }
+        .uff4{
+            position: absolute;
+            color:#060505;
+            margin-left: 30px;
+        }
+        .ram{
+            position: absolute;
+            padding-right:400px;
+            padding-bottom:450px;
+            padding-left: 10px;
+            background-color:rgb(220, 242, 247);
+            top:2400px;
+            left:40px;
+        }
+        .ram>h2{
+           position: absolute;
+            bottom:85%;
+            left:10%;
+        }
+        .rom1{
+            position: absolute;
+            top: 90px;
+        }
+        .rom2{
+            position: absolute;
+            left:200px;
+            top:90px;
+        }
+        .rom3{
+            position: absolute;
+            top:250px;
+        }
+        .rom4{
+            position: absolute;
+            top:250px;
+            left:200px;
+        }
+        .kolo1{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .kolo2{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .kolo3{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .kolo4{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .sita{
+            position: absolute;
+            padding-right:400px;
+            padding-bottom:450px;
+            padding-left: 10px;
+            background-color:rgb(220, 242, 247);
+            top:2400px;
+            left:900px;
+        }
+        .sita>h2{
+            position: absolute;
+            bottom:88%;
+            left:10%;
+        }
+        .masa1{
+            position: absolute;
+            top: 90px;
+        }
+        .masa2{
+            position: absolute;
+            left:200px;
+            top:90px;
+        }
+        .masa3{
+            position: absolute;
+            top:250px;
+        }
+        .masa4{
+            position: absolute;
+            top:250px;
+            left:200px;
+        }
+        .kolo5{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .kolo6{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .kolo7{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .kolo8{
+            position: absolute;
+            color:#060505;
+            margin-left: 20px;
+        }
+        .rama{
+            display:grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+            gap: 10px;
+            position: relative;
+            overflow:auto;
+            padding-top:50px;
+            background: #daf6f6;
+            margin-top: 500px;
+            padding-bottom: 50px;
+        }
+        .rama>h2{
+            position: absolute;
+            bottom:85%;
+            left:30px;
+        }
+        .casa{
+          position: relative;
+          padding:50px;
+        }
+        .lalal{
+            position: absolute;
+            top:10%;
+            left:39%;
+        }
+        .dolu{
+             position: absolute;
+             color:black;
+             background-color: #f5ce4f;
+             padding:10px 80px 10px 80px;
+             border-radius: 5px;
+             top:30pxpx;
+             left:40%;
+        }
+        .dd{
+            position: absolute;
+            top: 90px;
+            left: 555px;
+
+        }
+        .dolu1{
+            color:#6296d1;
+        }
+        .back{
+            text-decoration: none;
+            color:white;
+            background-color: #3b4055;
+            padding:10px;
+            text-align: center;
+            margin-left: 45%;
+           
+        }
+        .pass{
+            margin-top: 30px;
+            background-color:#3b4055 ;
+            padding-top: 20px;
+            padding-bottom:20px;
+            padding-right:20px;
+        }
+        footer{
+            position: relative;
+            background-color:#161820;
+            padding:20%;
+            display:grid;
+            grid-template-columns: auto auto auto auto ;
+            gap:2px;
+            color:white
+
+        }
+        .solo1{
+           position: absolute;
+           top:40px;
+           left:250px;
+        }
+       
+        .tolo1{
+            position: absolute;
+            top:40px;
+            left:450px;
+
+        }
+        .rolo1{
+            position: absolute;
+            top:40px;
+            left:650px;
+        }
+        .jolo1{
+            position: absolute;
+            top:40px;
+            left:950px;
+        }
+        .pow{
+           position:relative;
+           background-color: #040405;
+           margin-top:1px;
+           padding:2%;
+        }
+        .pow1{
+           width:100px;
+           height:50px;
+           margin-left:45%;
+
+        }
+        .pow2>p{
+           margin-left: 38%; 
+           color:white;
+        }
+        
+        
+        
+    </style>
+
+</head>
+<body>
+    <div class="grid-box">
+        <div id="head">
+        <div class="item1">
+         <img style="height:50px;width:90px" src="data:image/png;base64,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";><p class="Amazon" style="color: antiquewhite;">.in</p>
+         </div>
+         <div>
+            <p class="loc">Hello <br><i class="fa-light fa-location-dot fa-lg" style="color: #f9fafd;"><strong>select your address</strong></i></p>
+>
+         </div>
+        <div class="item">
+            <input  class=navbar type="search" name="name" id="">
+            <a class="nav" href='#'><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #060505;"></i></a>
+            <a href="#"><select class="select">
+                <option value="">All</option>
+                <option value="">All Catagories</option>
+                <option value="">Alexa Skills</option>
+                <option value="">Amazon Fashion</option>
+                <option value="">Amazon Fresh</option>
+                <option value="">Amazon Pharmacy</option>
+                <option value="">Appliances</option>
+                <option value="">Apps&Games</option>
+                <option value="">Baby</option>
+                <option value="">Beauty</option>
+                <option value="">Books</option>
+                <option value="">Car&Motorbike</option>
+                <option value="">Clothing&Accessories</option>
+                <option value="">Collectibles</option>
+                <option value="">Computers&Accessories</option>
+                <option value="">Electronics</option>
+                <option value="">Furniture</option>
+                <option value="">Garden&Outdoors</option>
+                <option value="">Gift Cards</option>
+                <option value="">Grocery&Gourmet Foods</option>
+                <option value="">Health&Personal Care</option>
+                <option value="">Home&Kitchen</option>
+                <option value="">Industrial&Scientific</option>
+            </select></a>
+        </div> 
+        <div>
+         <a href="#"><img class="lang" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAmVBMVEX/mTMSiAf/////lycAgQAAAIgAAIUAAH4AAIIAAIMAAHwAAHPi4u+kpMvz8/kAAHjn5/Lt7fXd3ey5uddPT6GZmcWDg7n6+v7Ly+HIyOJERJxlZao+PponJ5L29vy0tNbW1uggIJCfn8iGhrsYGJBNTaB2drQQEIx+fripqc5ra62QkMBXV6QiIpFfX6i+vtwyMpw6Opg1NZe0gadDAAAEvUlEQVR4nO3ba3OiSBiG4UzvdDcip8YDiAdQZAIxExP//4/btzHjZH1Nze6HpVPlc1Ul0eiH9g7Q2JKHBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/+gvuPYg4BqacGjCoQmHJhyacF+hSTI5LFd7uV8tD5PE9WDEF2gSHNbaGyklpVRq5Omfh8D1kBw3qaZ6pCiGVFrr/oYc6SZ3OyinTZIpdZCeevnhNyY1jf/jRXm0vejG6S7kssnObhmeNxMbcTSiEuZIt2aeZ7eancNxOWzy7NFrn3cnI/p9pbTfcmFO3ZxaeVN3A3PWJNrS5lAEmb3d5wgvt7KgoMe2kauhuWoSPdK2QHvIwt5ZpPTtQF/p+S7tVbQNPbqK4qhJRluJ17VGZB3di2yPF/o62AxdJkzbUZRt5mZwjpo0lOTY3wrtFGMPHq/vP5N+JxJHiuLomOKmycyTXinOUewLX1IYSTmW7/cpiSjpOTMno3PSJNA049TnQ4gIae8J6cVrSkWbSNdvJvRITbOPdnJO66RJo1QzM3RjaY8YMhLVVmR+JraViGhzEZn9vZnZp7kYnosmCy31+UR180oH1a4QWWyiODJxJhqajaPTpn80oee5OM130WSlVL3pZ11hJO0daiLWITUJ12KiaM+Spn9ssamVKhyMz0GTVNsDrOi6/o5fiVKLdmVis2qFLkXl27OV/rhCh1mdDj9AB01qmoftnz+Z2ir5+Cjk08JP49RfPElxHNvdpZvao2vhyVE9/AAdNHmkOfZ8ihpK2l4m4y4fJ7ryKp2M8248oe1D7vrHDc3Z++EHOHwTmojlr9tRISciHB/beZ3v87puj+OdmMiV+fUE6WI6Hr5J6amnaFEuzptK6av8GAfrKmzDah3Ex/zR798Iik1e5tGT8srBRzh8k7lSLf1ID9NlWNF5yHLcBuugLd6KNl0H87E9N0m7p+Zgj66tUvPBRzh8k2cl/fNZRzLbxut2kczXaWFXIEdFsG6TfH6KH2fnPSb3pXoefITDN3lVanpZBTDhytd12o6kNWrTg/ZPu8vKYzRV6nXwEQ7fRErvkiSLIpNWeViovokqdnmVmii6LBJE3u8D8mCcNEmqYzhbnqT2/TiOvX37Js/e6q1Hv4l9LX8+H8IyT++mCbaTK1fHkzccTz7OO8Hveafp550mWM/vct6Zn085cH7ywe3z2JTOY9O7PY/F+50b9vS++PyiP3tfPLm398WiHv15/aTs109Wd7N+gnW2G4p/uR6b3c96rMiv1u2bT9btgztat+8/3zmY989xbn6+I+7t8x18DngLPi++YYrrChhcf3IDrlO6IdqOpCpSXM/2D/11j234yXWPwy+bXOD6WO5rXkc9vdvrqAWut78N/5dx08f/3zF/fvr/7is0+WrQhEMTDk04NOHQhHv4DtcevsE1NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMT7m/cNifkUwM0UQAAAABJRU5ErkJggg=="></a>
+        <select class="lang2">
+            <option value="English-EN">EN</option>
+            <option value="தமிழ்-TA">TA</option>
+            <option value="తెలుగు-TE">TE</option>
+            <option value="हिन्दी-HI">HI</option>
+            <option value="ಕನ್ನಡ-KN">KN</option>
+        </select>
+        </div>
+        <div class="sign">
+        <a href="#"><label><p>Hello,sign in</p></label>
+         <select class="signin">
+          <option><a href="#">Account&List</a></option>
+        </select>
+        </a>
+        </div>
+        <div class="boo">
+         <a href="#">Returns <br> <span style="font-size:larger;">&Order</span></a>
+         <a class="momo" href="#"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #0cf3f3;"></i></a>
+        <p class="momo1">cart</p>
+        </div>
+        </div>
+        </div>
+        <div class="item2">
+        <div><a class="first" href="#"><i class="fa-sharp fa-solid fa-bars fa-xl" style="color: #fefbfb;"></i></a></div>
+        <div ><a class="second" href="#"><b>All</b></a></div>
+        <div><a class="third" href="#"><b>Amazon mimiTV</b></a></div>
+        <div><a class="fourth" href="#"><b>Sell</b></a></div>
+        <div><a class="fifth" href="#"><b>Best Sellers</b></a></div>
+        <div><a class="six" href="#"><b>Mobiles</b></a></div>
+        <div><a class="seven" href="#"><b>Todays Deals</b></a></div>
+        <div><a class="eight"href="#"><b>Costomer Service</b></a></div>
+        <div><a class="nine"href="#"><b>New Releases</b></a></div>
+        <div><a class="ten"href="#"><b>Electronics</b></a</div>
+        <div><a class="eleven"href="#"><b>prime</b><select class="eleven1">
+        <option><img width="40%" height="50%" src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB612889281_.jpg"></option>
+        </select></a></div>
+        <div><a class="one"href="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_crs_in_s_gw_swm_dk_np_citadlfn"><img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Citadel-FinalEpisode/400x39-SWM_NP._CB589129823_.jpg"></a></div>
+        </div> 
+      <div class="item3">
+        <img class="pogo" width="100%" height="100%" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Unrec/TallHero_3000X1200_Unrec._CB593464763_.jpg">
+     </div>
+      <div class="loss">
+        <div class="dol">
+        <h2>Summer Value Days|Up to<br>35% offer|Summer...</h2>
+        <a class="moj1" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HPC/Coop/JuneSVD/pc_qc_1_1x._SY116_CB587586119_.jpg"><h5 class="mol1">Health Drinks</h5></a>
+        <a class="moj2" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HPC/Coop/JuneSVD/pc_qc_3_1x._SY116_CB587586119_.jpg"><h5 class="mol2">Juices</h5></a>
+        <a class="moj3" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HPC/Coop/JuneSVD/pc_qc_2_1x._SY116_CB587586119_.jpg"><h5 class="mol3">Skin&Hair Care</h5></a>
+        <a class="moj4" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HPC/Coop/JuneSVD/pc_qc_4_1x._SY116_CB587586119_.jpg"><h5 class="mol4">Baby Care</h5></a>
+        </div>
+        <div class="sol">
+            <h2>Appliances For Your Home|<br>Up to 55% offer</h2>
+            <a class="mot1" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"><h5 class="mop1">Air Conditioner</h5></a>
+            <a class="mot2" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"><h5 class="mop2">Refrigerator</h5></a>
+            <a class="mot3" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"><h5 class="mop3">Microwaves</h5></a>
+            <a class="mot4" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"><h5 class="mop4">Washing machines </h5></a>
+            </div>
+        </div>
+        <div class="dog">
+            <h2>Sign For Your Best Experience</h2>
+            <a class="lal" href="">Sign in securely</a>
+        </div>
+        <div class="pos1"><img src="https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg"></div>
+      <div class="polo">
+                <h2>50%-80% offer | Wardrobe<br>Refresh Sale</h2>
+                <a class="logo1" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/JuneWRS/BTF/PCQC/M-clothing-186-116._SY116_CB587890891_.png"><h5 class="lag1"> Clothing</h5></a>
+                <a class="logo2" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/JuneWRS/BTF/PCQC/shoes-186-116._SY116_CB587890891_.png"><h5 class="lag2">Footware</h5></a>
+                <a class="logo3" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/JuneWRS/BTF/PCQC/M-watches-186-116._SY116_CB587890891_.png"><h5 class="lag3">Watches</h5></a>
+                <a class="logo4" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/JuneWRS/BTF/PCQC/luggage-186-116._SY116_CB587890891_.png"><h5 class="lag4">Bags&luggage</h5></a>
+            </div>
+        <div class="tone">
+            <h2>Up to 70% offer | Clearance Store</h2>
+            <a class="tall" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg"></a>
+        </div>
+        <div class="don">
+            <h2>Automotive essentials | Up to 60% off</h2>
+            <a class="cap1" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg"><h5 class="kal1"> Clothing</h5></a>
+            <a class="cap2" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg"><h5 class="kal2">Footware</h5></a>
+            <a class="cap3" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg"><h5 class="kal3">Watches</h5></a>
+            <a class="cap4" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg"><h5 class="kal4">Bags&luggage</h5></a>
+        </div>
+      </div>
+       <div class="yar">
+        <h2>Up to 50% off | Kitchen organizers from Local Shop</h2>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/31pVGTKY1XS._AC_SY200_.jpg"></a></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/61OHduNb0gL._AC_SY200_.jpg"></a></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/61YbyAWT4YL._AC_SY200_.jpg"></a></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/71K3EMicupL._AC_SY200_.jpg"></a></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/61HnMHs3unS._AC_SY200_.jpg"></a></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/51-ljyMC6fS._AC_SY200_.jpg"></a></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/51eHjilsOhL._AC_SY200_.jpg"></a></div>
+       </div>
+       <div class="kar">
+        <h2>Today’s Deals</h2>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/B1KAVi16CmL._AC_SY200_.png"></a><p class="tal1"><a class="lg" href="">upto 79% off</a><br>Menswear by Levi's, Dennis Lingo....</p></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/81TBkVDGeGL._AC_SY200_.jpg"></a><p class="tal2"><a class="lg" href="">upto 50% off</a><br>Men's Footwear: Bata, Hush....</p></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/91uWUINoE5L._AC_SY200_.png"></a><p class="tal3"><a class="lg" href="">upto 79% off</a><br>Eyewear by Ray-Ban, John Jacobs....</p></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/31EX-F8WF7L._AC_SY200_.jpg"></a><p class="tal4"><a class="lg" href="">upto 48% off</a><br>Deals on Premium Routers....</p></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/81CXTDCJMoL._AC_SY200_.jpg"></a><p class="tal5"><a class="lg" href="">upto 54% off</a><br>Crocs Footwear....</p></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/71ZNg5mFvvL._AC_SY200_.jpg"></a><p class="tal6"><a class="lg" href="">upto 84% off</a><br>Raymond, BIBA, Peter England....</p></div>
+        <div><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://m.media-amazon.com/images/I/41EcYoIZhIL._AC_SY200_.jpg"></a><p class="tal7"><a class="lg" href="">upto 50% off</a><br>Mixers,juicer,cutter....</p></div>
+       </div>
+       <div class="po">
+        <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img class="po1" src="https://m.media-amazon.com/images/G/31/AMS/IN/970X250-_desktop_banner.jpg"></a>
+       </div>
+       <div class="pig">
+        <h2>Essentials For Expecting <br> Mother</h2>
+        <a class="pig1" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Pregnancy_Supplements._SY116_CB667651395_.jpg"><p class="uff1">Pregnancy Supplements</p></a>
+        <a class="pig2" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Maternity_Sleep__Loungewear._SY116_CB667651395_.jpg"><p class="uff2">Maternity Sleep&Loungewear</p></a>
+        <a class="pig3" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Maternity_pillows._SY116_CB667651395_.jpg"><p class="uff3">Maternity pillow</p></a>
+        <a  class="pig4" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Maternity_Skin_care._SY116_CB667651395_.jpg"><p class="uff4">Maternity skin & <br>Haircare</p></a>
+       </div>
+       <div class="ram">
+        <h2>One stop shop for all your<br> wedding shopping</h2>
+        <a class="rom1" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/For_her-1_1x._SY116_CB653484282_.jpg"><p class="kolo1">Shop for her</p></a>
+        <a class="rom2" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/For_him-1_1x._SY116_CB653484282_.jpg"><p class="kolo2">Shop for him</p></a>
+        <a class="rom3" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/Pooja_essentials-1_1x._SY116_CB653484282_.jpg"><p class="kolo3">Pooja Essentials</p></a>
+        <a  class="rom4" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/Explore_more-1_1x._SY116_CB653484282_.jpg"><p class="kolo4">Explore the store</p></a>
+       </div>
+       <div class="sita">
+        <h2>Revamp your home in style</h2>
+        <a class="masa1" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_1_Low._SY116_CB670263840_.jpg"><P class="kolo5">Bedsheets,curtains & <br>more...</P></a>
+        <a class="masa2" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_2_Low._SY116_CB670263840_.jpg"><P class="kolo6">Home decoration</P></a>
+        <a class="masa3" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_3_Low._SY116_CB670263840_.jpg"><P class="kolo7">Home storage</P></a>
+        <a class="masa4" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_4_Low._SY116_CB670263840_.jpg"><P class="kolo8">Lighting solution</P></a>
+       </div>
+       <div class="rama">
+        <h2>Frequently repurchased in Grocery </h2>
+        <div><img src="https://m.media-amazon.com/images/I/71JmDLvzZ9L._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/713D1eLsaqL._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/61Fg37hIhmL._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/51kJcHmZtPS._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/51dWUMCgQzL._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/814iBcUf1aL._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/510O7shLZyL._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/919GUWP1tpL._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/71P2iOAIi9L._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/71Y0DuEYXXL._AC_SY200_.jpg"></div>
+        <div><img src="https://m.media-amazon.com/images/I/61CLFkw3nQL._AC_SY200_.jpg"></div>
+       </div>
+       <hr>
+       <div class="casa">
+         
+         <p class="lalal">see personalized recommendations</p>
+         <a class="dolu" href="file:///F:/css%20assign.html/login%20form.html.html">sign in</a><br>
+         <div class="dd">
+         <span >New customer?</span>
+         <a class="dolu1" href="https://m.media-amazon.com/images/I/61CLFkw3nQL._AC_SY200_.jpg">start here</a></div>
+        
+        </div>
+        <hr>
+        <div class="pass">
+            <a class="back" href="#head">Back to top</a>
+        </div>
+       <footer>
+        <div class="solo1">
+        <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><h3>Get to Know Us</h3></a>
+        <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>About Us</p></a>
+        <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Careers</p></a>
+        <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Press Releases</p></a>
+        <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Amazon Science</p></a>
+       </div>
+        <div class="tolo1">
+        <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><h3>Connect with Us</h3></a>
+        <a href="https://www.facebook.com/Amazon/"><p>Facebook</p></a>
+        <a href="https://twitter.com/amazonin?lang=en"><p>Twitter</p></a>
+        <a href="https://www.instagram.com/amazon/?hl=en"><p>Instagram</p></a>
+        </div>
+        <div class="rolo1">
+            
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><h3>Make Money with Us </h3></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Sell on Amazon</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Sell under Amazon Accelerator</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Protect and Build Your Brand</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Amazon Global Selling</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Become an Affiliate</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Fulfilment by Amazon</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Advertise Your Products</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Amazon Pay on Merchants</p></a>
+        </div>
+        <div class="jolo1">
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><h3>Let Us Help You</h3></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>COVID-19 and Amazon</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Your Account</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Returns Centre</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>100% Purchase Protection</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p>Amazon App Download</p></a>
+            <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><p> Help</p></a>
+        </div>
+</footer>
+  <hr>
+<div class="pow">
+    <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"><img class="pow1" src="data:image/png;base64,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"></a>
+    <div class="pow2">
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+    </div>
+</div>
+    
+</body>
+</html>
